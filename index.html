@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>FACTORIAL DE UN NUMERO</title>
+</head>
+<body class="container w-4/5 mx-auto bg-linear-to-r from-cyan-200  to-cyan-200  " >
+
+
+          <header class=" bg-[url(imagenes/retulo.png)] bg-[length:100%_100%] bg-center bg-no-repeat mb-8 border-dashed border-[3px] border-cyan-900 rounded-3xl mt-1 overflow-hidden flex items-center justify-center 
+    
+    min-h-[80px] py-4 px-4 sm:border-8 sm:pr-16 md:py-9 md:justify-start  md:pl-20 md:border-[15px]   lg:w-full  lg:min-h-[150px] 
+
+    lg:rounded-[60px] lg:min-h-[200px] lg:py-24 lg:w-[98%] lg:max-w-[1800px] xl:pl-32 2xl:pl-40 mx-auto   "
+      >
+
+        
+        <h1 class=" text-center text-cyan-900 font-black break-words [-webkit-text-stroke:2px_white] text-sm sm:text-2xl
+
+         md:text-left md:text-3xl md:pl-6 lg:text-3xl lg:pl-40 xl:text-4xl xl:pl-40 2xl:text-5xl 2xl:pl-40   "
+        
+        >FACTORIAL DE UN NÚMERO</h1>
+
+
+
+    </header>
+
+     <main class=""  >
+
+        <details class=" mb-10  bg-linear-to-r from-cyan-300 to-teal-100 mt-24  rounded-3xl sm:mb-14 sm:mx-0 sm:ml-5    md:mb-16 md:ml-12   lg:mb-20  lg:ml-1  xl:ml-1   xl:mb-24 2xl:mb-28 mx-2   2xl:ml-1  ">
+            <summary class=" bg-linear-to-r from-cyan-400  to-cyan-300  text-cyan-700 font-black rounded-2xl pt-1 pb-2 text-[10px] sm:text-sm md:text-base 
+
+            lg:text-lg lg:pt-3 lg:pb-3 xl:text-xl xl:pt-4 xl:pb-4 2xl:text-2xl 2xl:pt-5 2xl:pb-5  ">Ejercicio 7.3.Factorial de un número </summary>
+
+            <p class="ml-2">
+                 <p>Realizar un programa donde el usuario introduce un número y el programa llama a una función que devuelve el <b>factorial</b> del número introducido.</p>
+                  <p>El factorial de un número n (entero, no negativo) es el producto de todos los números enteros positivos inferiores o iguales a n.</p>
+                  <p>Si el usuario introduce un número negativo, transformar a positivo y repintar el valor en pantalla. (método <a target="_blank" rel="noopener" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/abs">Math.abs(x)</a>)</p>
+                  <p>Ejemplo: n = 5  --> resultado = 5 * 4 * 3 * 2 * 1 = <b>120</b></p>
+
+            </p>
+              
+          </details> 
+
+            <div class=" border border-cyan-600 border-solid rounded-3xl pt-1 w-5/6 pb-4 ml-0 px-2 sm: w-full sm:ml-4 sm:py-2
+
+             md:flex md:flex-row md:items-center md:gap-2 md:ml-5 md:py-1 lg:flex  lg:flex-row lg:items-center lg:gap-2 lg:w-full lg:ml-0 lg:py-1 
+             
+             xl:flex xl:flex-row  xl:items-center xl:gap-2  xl:ml-2 xl:pt-1 2xl:flex 2xl:flex-row 2xl:items-center 2xl:gap-2 2xl:ml-5 ">
+
+              <label class=" text-sm text-cyan-700 font-black pl-1 sm:text-base lg:text-lg xl:text-xl min-w-max ">Introducir un numero entero: </label>
+
+                <input class=" border border-cyan-600 border-solid rounded-3xl px-1 py-1 text-sm text-cyan-700 font-black pb-1 mb-3 sm:text-[10px] sm:px-0.5 sm:w-16
+
+                 md:text-base md:w-24 md:mt-1.5 md:py-1 lg:py-1  lg:mt-2  lg:text-lg lg:w-32 lg:px-3  xl:text-xl xl:w-[400px] xl:py-1  xl:px-4 
+
+                  xl:py-2   2xl:py-1 2xl:px-4  2xl:text-xl  2xl:pt-2  2xl:w-[500px]  w-full mb-0  " type="number" id="uno"/>
+
+
+
+                <button class=" border-2 border-cyan-600 border-solid rounded-3xl px-1 py-0.5 text-[10px] font-bold bg-cyan-600 text-white cursor-pointer
+
+                 hover:bg-linear-to-r hover:from-green-300 hover:to-teal-500-200 hover:text-green-800 w-auto ml-5  sm:text-[11px] sm:px-1.5 sm:py-1 sm:min-w-max
+
+                  md:text-sm md:px-1 md:py-1 lg:text-base lg:px-3 lg:py-1 xl:text-xl xl:px-5 xl:py-2 2xl:px-5 2xl:py-2  "    type="button" onclick="calcularfactorial()">CALCULAR FACTORIAL </button>
+
+               
+             </div>
+
+               <div class="pt-5 pl-10 ">
+
+                   <p  class="text-sm   text-cyan-700 font-black   sm:text-base md:text-sm md:ml-36  lg:text-lg  lg:ml-12 xl:text-xl  xl:pl-40  2xl:text-xl 2xl:ml-36 mt-2 sm:mt-0 md:mt-0 break-words w-full"      id="resultado"></p>
+
+                </div>
+
+
+
+   <script src="js/factorial.js"></script> 
+    
+</body>
+</html>
